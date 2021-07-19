@@ -128,3 +128,50 @@ averageCpu                     | maxDeltaCpu                    | minDeltaCpu
 记录写入速度                    :          10000rec/s
 读出记录总数                    :              100000
 读写失败总数                    :                   0
+
+
+```shell
+python datax.py -r streamreader -w streamwriter
+
+DataX (DATAX-OPENSOURCE-3.0), From Alibaba !
+Copyright (C) 2010-2017, Alibaba Group. All Rights Reserved.
+
+
+Please refer to the streamreader document:
+     https://github.com/alibaba/DataX/blob/master/streamreader/doc/streamreader.md
+
+Please refer to the streamwriter document:
+     https://github.com/alibaba/DataX/blob/master/streamwriter/doc/streamwriter.md
+
+Please save the following configuration as a json file and  use
+     python {DATAX_HOME}/bin/datax.py {JSON_FILE_NAME}.json
+to run the job.
+
+{
+    "job": {
+        "content": [
+            {
+                "reader": {
+                    "name": "streamreader",
+                    "parameter": {
+                        "column": [],
+                        "sliceRecordCount": ""
+                    }
+                },
+                "writer": {
+                    "name": "streamwriter",
+                    "parameter": {
+                        "encoding": "",
+                        "print": true
+                    }
+                }
+            }
+        ],
+        "setting": {
+            "speed": {
+                "channel": ""
+            }
+        }
+    }
+}
+```
