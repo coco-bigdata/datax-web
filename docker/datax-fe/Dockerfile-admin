@@ -12,4 +12,6 @@ COPY logback-admin.xml /home/datax-web/logback.xml
 COPY i18n /home/datax-web/i18n
 COPY mybatis-mapper /home/datax-web/mybatis-mapper
 
+ENV CLASSPATH /home/datax-web:$CLASSPATH
+
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","datax-admin.jar"]
