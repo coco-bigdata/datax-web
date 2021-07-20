@@ -42,5 +42,5 @@ services:
       - ./datax-web/data:/home/datax-web/data
       - /etc/localtime:/etc/localtime
     depends_on:
-      - datax-web-mysql
+      - datax-web-admin
     restart: always
