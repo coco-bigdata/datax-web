@@ -7,5 +7,6 @@ COPY ./datax-admin-2.1.2.jar /home/datax-web/datax-admin.jar
 WORKDIR /home/datax-web
 
 COPY application-admin.yml /home/datax-web/application.yml
+COPY logback-admin.xml /home/datax-web/logback.xml
 
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","datax-admin.jar"]
