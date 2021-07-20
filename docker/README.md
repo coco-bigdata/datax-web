@@ -20,4 +20,8 @@ mvn package
 
 cp ../datax-admin/target/datax-admin-2.1.2.jar datax-fe/
 cp ../datax-executor/target/datax-executor-2.1.2.jar datax-fe/
+
+https://data1.yongchehang.com/index.html
+admin
+123456
 ```
