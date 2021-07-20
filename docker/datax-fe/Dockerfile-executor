@@ -1,0 +1,11 @@
+FROM yiluxiangbei/centos7-bigdata-datax
+
+RUN mkdir -p /home/datax-web
+
+COPY ./datax-executor-2.1.2.jar /home/datax-web/datax-executor.jar
+
+WORKDIR /home/datax-web
+
+COPY application-executor.yml /home/datax-web/application.yml
+
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","datax-executor.jar"]
