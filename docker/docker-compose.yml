@@ -16,6 +16,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
     restart: always
+
   datax-web-admin:
     build:
       context: datax-fe
@@ -24,10 +25,12 @@ services:
     ports:
       - "8012:8080"
     volumes:
+      - ./datax-web/data/admin:/home/datax-web/data
       - /etc/localtime:/etc/localtime
     depends_on:
       - datax-web-mysql
     restart: always
+
   datax-web-executor:
     build:
       context: datax-fe
@@ -36,6 +39,7 @@ services:
     ports:
       - "8013:8081"
     volumes:
+      - ./datax-web/data/executor:/home/datax-web/data
       - /etc/localtime:/etc/localtime
     depends_on:
       - datax-web-mysql
