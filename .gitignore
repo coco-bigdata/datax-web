@@ -1,20 +1,56 @@
-
-/datax-executor/target/
-/datax-executor/datax-executor.iml
-/datax-core/datax-core.iml
-/datax-core/target/
-/datax-admin/datax-admin.iml
-/datax-admin/target/
-/.idea/
-/datax-admin/.idea/
-/datax-registry/datax-registry.iml
-/datax-registry/target/
-/datax-rpc/datax-rpc.iml
-/datax-rpc/target/
-/datax-all.iml
-/logs/
-*-dev*
-/data/
+### gradle ###
+.gradle
 /build/
-/packages/
-/datax-assembly/target/
+!gradle/wrapper/gradle-wrapper.jar
+
+### STS ###
+.settings/
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+bin/
+
+### IntelliJ IDEA ###
+/.idea/
+/private/
+/storage/
+/athena.iml
+.checkstyle
+.idea
+*.iws
+*.iml
+*.ipr
+rebel.xml
+### maven ###
+target/
+*.war
+*.ear
+*.zip
+*.tar
+*.tar.gz
+
+### logs ####
+/logs/
+*.log
+
+### temp ignore ###
+*.cache
+*.diff
+*.patch
+*.tmp
+*.java~
+*.properties~
+*.xml~
+
+### system ignore ###
+.DS_Store
+Thumbs.db
+Servers
+.metadata
+upload
+gen_code
+
+package-lock.json
