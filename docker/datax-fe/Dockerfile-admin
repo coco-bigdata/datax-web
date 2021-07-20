@@ -9,5 +9,7 @@ WORKDIR /home/datax-web
 
 COPY application-admin.yml /home/datax-web/application.yml
 COPY logback-admin.xml /home/datax-web/logback.xml
+COPY i18n /home/datax-web/i18n
+COPY mybatis-mapper /home/datax-web/mybatis-mapper
 
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","datax-admin.jar"]
