@@ -1,6 +1,7 @@
 FROM yiluxiangbei/centos7-bigdata-datax
 
 RUN mkdir -p /home/datax-web
+RUN mkdir -p /home/datax-web/data/applogs/executor/jobhandler
 
 COPY ./datax-executor-2.1.2.jar /home/datax-web/datax-executor.jar
 
