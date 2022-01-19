@@ -9,6 +9,8 @@ sudo docker-compose up
 sudo docker-compose up -d
 
 sudo docker-compose build
+sudo docker-compose build datax-web-admin
+sudo docker-compose build datax-web-executor
 
 sudo docker-compose up datax-web-admin
 sudo docker-compose up -d datax-web-admin
