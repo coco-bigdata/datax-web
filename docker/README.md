@@ -24,4 +24,13 @@ cp ../datax-executor/target/datax-executor-2.1.2.jar datax-fe/
 https://data1.yongchehang.com/index.html
 admin
 123456
+
+docker_datax-web-executor
+docker_datax-web-admin
+
+sudo docker tag docker_datax-web-admin:latest yiluxiangbei/centos7-bigdata-dataxweb-admin:latest
+sudo docker tag docker_datax-web-executor:latest yiluxiangbei/centos7-bigdata-dataxweb-executor:latest
+
+sudo docker push yiluxiangbei/centos7-bigdata-dataxweb-admin:latest
+sudo docker push yiluxiangbei/centos7-bigdata-dataxweb-executor:latest
 ```
