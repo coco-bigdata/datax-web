@@ -33,6 +33,8 @@ cp ../datax-admin/target/datax-admin-2.1.2.jar datax-fe/
 cp ../datax-executor/target/datax-executor-2.1.2.jar datax-fe/
 
 sudo docker-compose build
+sudo docker-compose build datax-web-admin
+sudo docker-compose build datax-web-executor
 
 https://data1.yongchehang.com/index.html
 admin
