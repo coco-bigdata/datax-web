@@ -10,9 +10,13 @@ sudo docker-compose up -d
 
 sudo docker-compose build
 
+sudo docker-compose up datax-web-admin
 sudo docker-compose up -d datax-web-admin
-sudo docker-compose up -d datax-web-executor
+sudo docker-compose stop datax-web-admin
 
+sudo docker-compose up datax-web-executor
+sudo docker-compose up -d datax-web-executor
+sudo docker-compose stop datax-web-executor
 
 mysql -h127.0.0.1 -uroot -p -P3312
 root
