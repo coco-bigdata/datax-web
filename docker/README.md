@@ -26,6 +26,8 @@ cd docker
 cp ../datax-admin/target/datax-admin-2.1.2.jar datax-fe/
 cp ../datax-executor/target/datax-executor-2.1.2.jar datax-fe/
 
+sudo docker-compose build
+
 https://data1.yongchehang.com/index.html
 admin
 123456
