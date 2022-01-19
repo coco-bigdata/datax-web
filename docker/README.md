@@ -14,13 +14,15 @@ sudo docker-compose up -d datax-web-admin
 sudo docker-compose up -d datax-web-executor
 
 
-mysql -h127.0.0.1 -uroot -p -P3310
+mysql -h127.0.0.1 -uroot -p -P3312
+root
 create database dataxweb default character set utf8mb4 collate utf8mb4_unicode_ci;
 
-mysql -h127.0.0.1 -uroot -p -P3310 dataxweb < bin/db/datax_web.sql
+mysql -h127.0.0.1 -uroot -p -P3312 dataxweb < bin/db/datax_web.sql
 
 mvn package
 
+cd docker
 cp ../datax-admin/target/datax-admin-2.1.2.jar datax-fe/
 cp ../datax-executor/target/datax-executor-2.1.2.jar datax-fe/
 
