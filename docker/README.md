@@ -36,6 +36,10 @@ https://data1.yongchehang.com/index.html
 admin
 123456
 
+https://sgcc.7otech.com/index.html
+admin
+123456
+
 docker_datax-web-executor
 docker_datax-web-admin
 
