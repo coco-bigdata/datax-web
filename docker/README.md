@@ -1,5 +1,5 @@
 ```shell
-mvn package
+mvn clean package
 
 cd docker
 sudo docker-compose up datax-web-mysql
@@ -26,7 +26,7 @@ create database dataxweb default character set utf8mb4 collate utf8mb4_unicode_c
 
 mysql -h127.0.0.1 -uroot -p -P3312 dataxweb < bin/db/datax_web.sql
 
-mvn package
+mvn clean package
 
 cd docker
 cp ../datax-admin/target/datax-admin-2.1.2.jar datax-fe/
