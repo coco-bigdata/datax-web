@@ -12,15 +12,13 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class Test {
 
     @org.junit.Test
     public void test() {
-        System.out.println(AESUtil.encrypt("root"));
-        System.out.println(AESUtil.encrypt("123456"));
-        System.out.println(AESUtil.decrypt("yRjwDFuoPKlqya9h9H2Amg=="));
+        System.out.println(AESUtil.encrypt1("root"));
+        System.out.println(AESUtil.encrypt1("123456"));
+        System.out.println(AESUtil.decrypt1("XCYVpFosvZBBWobFzmLWvA=="));
     }
 
 }

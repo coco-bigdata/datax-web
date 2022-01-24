@@ -77,6 +77,29 @@ public class AESUtil {
         return keygen;
     }
 
+    /**
+     * 生成加密秘钥
+     *
+     * @return
+     * @throws NoSuchAlgorithmException
+     */
+    private static KeyGenerator getKeyGenerator1() {
+
+        String key = "AD42F6697B035B75";
+
+        KeyGenerator keygen = null;
+        try {
+            keygen = KeyGenerator.getInstance(KEY_ALGORITHM);
+            SecureRandom secureRandom = SecureRandom.getInstance(DEFAULT_CIPHER_ALGORITHM);
+            secureRandom.setSeed(key.getBytes());
+            keygen.init(128, secureRandom);
+        } catch (NoSuchAlgorithmException e) {
+            log.warn("Get key generator error {}", e.getMessage());
+        }
+
+        return keygen;
+    }
+
     public static String encrypt(String message) {
         try {
             KeyGenerator keygen = getKeyGenerator();
@@ -88,9 +111,31 @@ public class AESUtil {
         return null;
     }
 
+    public static String encrypt1(String message) {
+        try {
+            KeyGenerator keygen = getKeyGenerator1();
+            SecretKey secretKey = new SecretKeySpec(keygen.generateKey().getEncoded(), KEY_ALGORITHM);
+            return Base64.getEncoder().encodeToString(encrypt(secretKey, message.getBytes(StandardCharsets.UTF_8)));
+        } catch (Exception e) {
+            log.warn("content encrypt error {}", e.getMessage());
+        }
+        return null;
+    }
+
     public static String decrypt(String ciphertext) {
         try {
             KeyGenerator keygen = getKeyGenerator();
+            SecretKey secretKey = new SecretKeySpec(keygen.generateKey().getEncoded(), KEY_ALGORITHM);
+            return new String(decrypt(secretKey, Base64.getDecoder().decode(ciphertext)), StandardCharsets.UTF_8);
+        } catch (Exception e) {
+            log.warn("content decrypt error {}", e.getMessage());
+        }
+        return null;
+    }
+
+    public static String decrypt1(String ciphertext) {
+        try {
+            KeyGenerator keygen = getKeyGenerator1();
             SecretKey secretKey = new SecretKeySpec(keygen.generateKey().getEncoded(), KEY_ALGORITHM);
             return new String(decrypt(secretKey, Base64.getDecoder().decode(ciphertext)), StandardCharsets.UTF_8);
         } catch (Exception e) {
