@@ -20,7 +20,7 @@ import java.util.List;
 
 
 public class MongoDBQueryTool {
-    private Logger logger = LoggerFactory.getLogger(MongoDBQueryTool.class);
+    private static Logger logger = LoggerFactory.getLogger(MongoDBQueryTool.class);
 
     private static MongoClient connection = null;
     private static MongoDatabase collections;

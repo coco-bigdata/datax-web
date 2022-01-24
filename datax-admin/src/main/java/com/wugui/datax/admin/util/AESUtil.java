@@ -104,7 +104,7 @@ public class AESUtil {
         String ciphertext = encrypt(message);
 
         System.out.println("加密后密文为: " + ciphertext);
-        System.out.println("解密后明文为:" + decrypt(ciphertext));
+        System.out.println("解密后明文为: " + decrypt(ciphertext));
     }
 
 }
