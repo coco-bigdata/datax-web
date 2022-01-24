@@ -9,6 +9,8 @@ import com.wugui.datax.admin.core.util.LocalCacheUtil;
 import com.wugui.datax.admin.entity.JobDatasource;
 import org.apache.commons.lang3.StringUtils;
 import org.bson.Document;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.net.UnknownHostException;
@@ -18,7 +20,7 @@ import java.util.List;
 
 
 public class MongoDBQueryTool {
-
+    private Logger logger = LoggerFactory.getLogger(MongoDBQueryTool.class);
 
     private static MongoClient connection = null;
     private static MongoDatabase collections;
@@ -142,6 +144,7 @@ public class MongoDBQueryTool {
     private static List<ServerAddress> parseServerAddress(String rawAddress) throws UnknownHostException {
         List<ServerAddress> addressList = new ArrayList<>();
         for (String address : Arrays.asList(rawAddress.split(","))) {
+            logger.debug("address: " + address);
             String[] tempAddress = address.split(":");
             try {
                 ServerAddress sa = new ServerAddress(tempAddress[0], Integer.valueOf(tempAddress[1]));
