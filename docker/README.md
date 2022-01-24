@@ -54,4 +54,6 @@ sudo docker push yiluxiangbei/centos7-bigdata-dataxweb-admin:latest
 sudo docker push yiluxiangbei/centos7-bigdata-dataxweb-executor:latest
 
 update job_jdbc_datasource set jdbc_username='yRjwDFuoPKlqya9h9H2Amg==' where id=4;
+update job_jdbc_datasource set jdbc_username='XCYVpFosvZBBWobFzmLWvA==' where id=4;
+update job_jdbc_datasource set jdbc_username='',jdbc_password='' where id=4;
 ```
