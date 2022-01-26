@@ -332,3 +332,129 @@ datax-web-admin       |         at sun.security.ssl.TransportContext.kickstart(T
 datax-web-admin       |         at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:428)
 datax-web-admin       |         at com.mysql.jdbc.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:186)
 datax-web-admin       |         ... 146 common frames omitted
+
+2022-01-26 08:14:15 [JobThread.run-130] <br>----------- datax-web job execute start -----------<br>----------- Param:
+2022-01-26 08:14:15 [BuildCommand.buildDataXParam-100] ------------------Command parameters:
+2022-01-26 08:14:15 [ExecutorJobHandler.execute-57] ------------------DataX process id: 595
+2022-01-26 08:14:15 [ProcessCallbackThread.callbackLog-186] <br>----------- datax-web job callback finish.
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] DataX (DATAX-OPENSOURCE-3.0), From Alibaba !
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] Copyright (C) 2010-2017, Alibaba Group. All Rights Reserved.
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 08:14:16.588 [main] INFO  VMInfo - VMInfo# operatingSystem class => sun.management.OperatingSystemImpl
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 08:14:16.597 [main] INFO  Engine - the machine info  =>
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 	osInfo:	Red Hat, Inc. 1.8 25.292-b10
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 	jvmInfo:	Linux amd64 3.10.0-1160.el7.x86_64
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 	cpu num:	8
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 	totalPhysicalMemory:	-0.00G
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 	freePhysicalMemory:	-0.00G
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 	maxFileDescriptorCount:	-1
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 	currentOpenFileDescriptorCount:	-1
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 	GC Names	[PS MarkSweep, PS Scavenge]
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 	MEMORY_NAME                    | allocation_size                | init_size                      
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 	PS Eden Space                  | 256.00MB                       | 256.00MB                       
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 	Code Cache                     | 240.00MB                       | 2.44MB                         
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 	Compressed Class Space         | 1,024.00MB                     | 0.00MB                         
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 	PS Survivor Space              | 42.50MB                        | 42.50MB                        
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 	PS Old Gen                     | 683.00MB                       | 683.00MB                       
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 	Metaspace                      | -0.00MB                        | 0.00MB                         
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 08:14:16.618 [main] INFO  Engine -
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] {
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 	"content":[
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 		{
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 			"reader":{
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 				"name":"mongodbreader",
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 				"parameter":{
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 					"address":[
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 						"10.50.10.27:27017"
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 					],
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 					"collectionName":"test",
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 					"column":[
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 						{
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 							"name":"c1",
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 							"type":"Integer"
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 						},
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 						{
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 							"name":"c2",
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 							"type":"Integer"
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 						}
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 					],
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 					"dbName":"test",
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 					"userName":"root",
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 					"userPassword":"******"
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 				}
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 			},
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 			"writer":{
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 				"name":"mysqlwriter",
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 				"parameter":{
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 					"column":[
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 						"`siteid`",
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 						"`citycode`"
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 					],
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 					"connection":[
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 						{
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 							"jdbcUrl":"jdbc:mysql://10.50.10.27:9030/sgcc",
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 							"table":[
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 								"table1"
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 							]
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 						}
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 					],
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 					"password":"****",
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 					"username":"root"
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 				}
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 			}
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 		}
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 	],
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 	"setting":{
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 		"errorLimit":{
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 			"percentage":0.02,
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 			"record":0
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 		},
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 		"speed":{
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 			"byte":1048576,
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 			"channel":3
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 		}
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 	}
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] }
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 08:14:16.639 [main] WARN  Engine - prioriy set to 0, because NumberFormatException, the value is: null
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 08:14:16.641 [main] INFO  PerfTrace - PerfTrace traceId=job_-1, isEnable=false, priority=0
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 08:14:16.641 [main] INFO  JobContainer - DataX jobContainer starts job.
+2022-01-26 08:14:16 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 08:14:16.643 [main] INFO  JobContainer - Set jobId = 0
+2022-01-26 08:14:17 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 08:14:17.580 [job-0] INFO  cluster - Cluster created with settings {hosts=[10.50.10.27:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-01-26 08:14:17 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 08:14:17.581 [job-0] INFO  cluster - Adding discovered server 10.50.10.27:27017 to client view of cluster
+2022-01-26 08:14:17 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 08:14:17.765 [cluster-ClusterId{value='61f102d9e64ada0258d248ae', description='null'}-10.50.10.27:27017] INFO  cluster - Exception in monitor thread while connecting to server 10.50.10.27:27017
+2022-01-26 08:14:17 [AnalysisStatistics.analysisStatisticsLog-53] com.mongodb.MongoSecurityException: Exception authenticating MongoCredential{mechanism=null, userName='root', source='test', password=<hidden>, mechanismProperties={}}
+2022-01-26 08:14:17 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.SaslAuthenticator.authenticate(SaslAuthenticator.java:61) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 08:14:17 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.DefaultAuthenticator.authenticate(DefaultAuthenticator.java:32) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 08:14:17 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.InternalStreamConnectionInitializer.authenticateAll(InternalStreamConnectionInitializer.java:99) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 08:14:17 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.InternalStreamConnectionInitializer.initialize(InternalStreamConnectionInitializer.java:44) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 08:14:17 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 08:14:17 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:128) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 08:14:17 [AnalysisStatistics.analysisStatisticsLog-53] 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+2022-01-26 08:14:17 [AnalysisStatistics.analysisStatisticsLog-53] Caused by: com.mongodb.MongoCommandException: Command failed with error 18: 'Authentication failed.' on server 10.50.10.27:27017. The full response is { "ok" : 0.0, "errmsg" : "Authentication failed.", "code" : 18, "codeName" : "AuthenticationFailed" }
+2022-01-26 08:14:17 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.CommandHelper.createCommandFailureException(CommandHelper.java:170) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 08:14:17 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.CommandHelper.receiveCommandResult(CommandHelper.java:123) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 08:14:17 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.CommandHelper.executeCommand(CommandHelper.java:32) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 08:14:17 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.SaslAuthenticator.sendSaslStart(SaslAuthenticator.java:95) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 08:14:17 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.SaslAuthenticator.authenticate(SaslAuthenticator.java:45) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 08:14:17 [AnalysisStatistics.analysisStatisticsLog-53] 	... 6 common frames omitted
+2022-01-26 08:14:17 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 08:14:17.977 [job-0] INFO  OriginalConfPretreatmentUtil - table:[table1] all columns:[
+2022-01-26 08:14:17 [AnalysisStatistics.analysisStatisticsLog-53] siteid,citycode,username,pv
+2022-01-26 08:14:17 [AnalysisStatistics.analysisStatisticsLog-53] ].
+2022-01-26 08:14:18 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 08:14:18.001 [job-0] INFO  OriginalConfPretreatmentUtil - Write data [
+2022-01-26 08:14:18 [AnalysisStatistics.analysisStatisticsLog-53] INSERT INTO %s (`siteid`,`citycode`) VALUES(?,?)
+2022-01-26 08:14:18 [AnalysisStatistics.analysisStatisticsLog-53] ], which jdbcUrl like:[jdbc:mysql://10.50.10.27:9030/sgcc?yearIsDateType=false&zeroDateTimeBehavior=convertToNull&tinyInt1isBit=false&rewriteBatchedStatements=true]
+2022-01-26 08:14:18 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 08:14:18.001 [job-0] INFO  JobContainer - jobContainer starts to do prepare ...
+2022-01-26 08:14:18 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 08:14:18.002 [job-0] INFO  JobContainer - DataX Reader.Job [mongodbreader] do prepare work .
+2022-01-26 08:14:18 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 08:14:18.002 [job-0] INFO  JobContainer - DataX Writer.Job [mysqlwriter] do prepare work .
+2022-01-26 08:14:18 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 08:14:18.002 [job-0] INFO  JobContainer - jobContainer starts to do split ...
+2022-01-26 08:14:18 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 08:14:18.003 [job-0] INFO  JobContainer - Job set Max-Byte-Speed to 1048576 bytes.
+2022-01-26 08:14:18 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 08:14:18.020 [job-0] INFO  cluster - No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=10.50.10.27:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSecurityException: Exception authenticating MongoCredential{mechanism=null, userName='root', source='test', password=<hidden>, mechanismProperties={}}}, caused by {com.mongodb.MongoCommandException: Command failed with error 18: 'Authentication failed.' on server 10.50.10.27:27017. The full response is { "ok" : 0.0, "errmsg" : "Authentication failed.", "code" : 18, "codeName" : "AuthenticationFailed" }}}]}. Waiting for 30000 ms before timing out
