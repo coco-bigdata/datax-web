@@ -458,3 +458,239 @@ datax-web-admin       |         ... 146 common frames omitted
 2022-01-26 08:14:18 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 08:14:18.002 [job-0] INFO  JobContainer - jobContainer starts to do split ...
 2022-01-26 08:14:18 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 08:14:18.003 [job-0] INFO  JobContainer - Job set Max-Byte-Speed to 1048576 bytes.
 2022-01-26 08:14:18 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 08:14:18.020 [job-0] INFO  cluster - No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=10.50.10.27:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSecurityException: Exception authenticating MongoCredential{mechanism=null, userName='root', source='test', password=<hidden>, mechanismProperties={}}}, caused by {com.mongodb.MongoCommandException: Command failed with error 18: 'Authentication failed.' on server 10.50.10.27:27017. The full response is { "ok" : 0.0, "errmsg" : "Authentication failed.", "code" : 18, "codeName" : "AuthenticationFailed" }}}]}. Waiting for 30000 ms before timing out
+
+2022-01-26 09:21:02 [JobThread.run-130] <br>----------- datax-web job execute start -----------<br>----------- Param:
+2022-01-26 09:21:02 [BuildCommand.buildDataXParam-100] ------------------Command parameters:
+2022-01-26 09:21:02 [ExecutorJobHandler.execute-57] ------------------DataX process id: 8101
+2022-01-26 09:21:02 [ProcessCallbackThread.callbackLog-186] <br>----------- datax-web job callback finish.
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] DataX (DATAX-OPENSOURCE-3.0), From Alibaba !
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] Copyright (C) 2010-2017, Alibaba Group. All Rights Reserved.
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 09:21:02.835 [main] INFO  VMInfo - VMInfo# operatingSystem class => sun.management.OperatingSystemImpl
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 09:21:02.844 [main] INFO  Engine - the machine info  =>
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 	osInfo:	Red Hat, Inc. 1.8 25.292-b10
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 	jvmInfo:	Linux amd64 3.10.0-1160.el7.x86_64
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 	cpu num:	8
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 	totalPhysicalMemory:	-0.00G
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 	freePhysicalMemory:	-0.00G
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 	maxFileDescriptorCount:	-1
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 	currentOpenFileDescriptorCount:	-1
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 	GC Names	[PS MarkSweep, PS Scavenge]
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 	MEMORY_NAME                    | allocation_size                | init_size
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 	PS Eden Space                  | 256.00MB                       | 256.00MB
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 	Code Cache                     | 240.00MB                       | 2.44MB
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 	Compressed Class Space         | 1,024.00MB                     | 0.00MB
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 	PS Survivor Space              | 42.50MB                        | 42.50MB
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 	PS Old Gen                     | 683.00MB                       | 683.00MB
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 	Metaspace                      | -0.00MB                        | 0.00MB
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 09:21:02.864 [main] INFO  Engine -
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] {
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 	"content":[
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 		{
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 			"reader":{
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 				"name":"mongodbreader",
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 				"parameter":{
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 					"address":[
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 						"10.50.10.27:27017"
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 					],
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 					"collectionName":"test",
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 					"column":[
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 						{
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 							"name":"c1",
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 							"type":"Integer"
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 						},
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 						{
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 							"name":"c2",
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 							"type":"Integer"
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 						}
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 					],
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 					"dbName":"test",
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 					"userName":"root",
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 					"userPassword":"******"
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 				}
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 			},
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 			"writer":{
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 				"name":"mysqlwriter",
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 				"parameter":{
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 					"column":[
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 						"`siteid`",
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 						"`citycode`"
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 					],
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 					"connection":[
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 						{
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 							"jdbcUrl":"jdbc:mysql://10.50.10.27:9030/sgcc",
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 							"table":[
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 								"table1"
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 							]
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 						}
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 					],
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 					"password":"****",
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 					"username":"root"
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 				}
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 			}
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 		}
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 	],
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 	"setting":{
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 		"errorLimit":{
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 			"percentage":0.02,
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 			"record":0
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 		},
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 		"speed":{
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 			"byte":1048576,
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 			"channel":3
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 		}
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 	}
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] }
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 09:21:02.884 [main] WARN  Engine - prioriy set to 0, because NumberFormatException, the value is: null
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 09:21:02.886 [main] INFO  PerfTrace - PerfTrace traceId=job_-1, isEnable=false, priority=0
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 09:21:02.887 [main] INFO  JobContainer - DataX jobContainer starts job.
+2022-01-26 09:21:02 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 09:21:02.889 [main] INFO  JobContainer - Set jobId = 0
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 09:21:03.060 [job-0] INFO  cluster - Cluster created with settings {hosts=[10.50.10.27:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 09:21:03.060 [job-0] INFO  cluster - Adding discovered server 10.50.10.27:27017 to client view of cluster
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 09:21:03.224 [cluster-ClusterId{value='61f1127fe64ada1fab1fd832', description='null'}-10.50.10.27:27017] INFO  cluster - Exception in monitor thread while connecting to server 10.50.10.27:27017
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] com.mongodb.MongoSecurityException: Exception authenticating MongoCredential{mechanism=null, userName='root', source='test', password=<hidden>, mechanismProperties={}}
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.SaslAuthenticator.authenticate(SaslAuthenticator.java:61) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.DefaultAuthenticator.authenticate(DefaultAuthenticator.java:32) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.InternalStreamConnectionInitializer.authenticateAll(InternalStreamConnectionInitializer.java:99) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.InternalStreamConnectionInitializer.initialize(InternalStreamConnectionInitializer.java:44) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:128) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] Caused by: com.mongodb.MongoCommandException: Command failed with error 18: 'Authentication failed.' on server 10.50.10.27:27017. The full response is { "ok" : 0.0, "errmsg" : "Authentication failed.", "code" : 18, "codeName" : "AuthenticationFailed" }
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.CommandHelper.createCommandFailureException(CommandHelper.java:170) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.CommandHelper.receiveCommandResult(CommandHelper.java:123) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.CommandHelper.executeCommand(CommandHelper.java:32) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.SaslAuthenticator.sendSaslStart(SaslAuthenticator.java:95) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.SaslAuthenticator.authenticate(SaslAuthenticator.java:45) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 	... 6 common frames omitted
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 09:21:03.510 [job-0] INFO  OriginalConfPretreatmentUtil - table:[table1] all columns:[
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] siteid,citycode,username,pv
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] ].
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 09:21:03.530 [job-0] INFO  OriginalConfPretreatmentUtil - Write data [
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] INSERT INTO %s (`siteid`,`citycode`) VALUES(?,?)
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] ], which jdbcUrl like:[jdbc:mysql://10.50.10.27:9030/sgcc?yearIsDateType=false&zeroDateTimeBehavior=convertToNull&tinyInt1isBit=false&rewriteBatchedStatements=true]
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 09:21:03.531 [job-0] INFO  JobContainer - jobContainer starts to do prepare ...
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 09:21:03.531 [job-0] INFO  JobContainer - DataX Reader.Job [mongodbreader] do prepare work .
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 09:21:03.531 [job-0] INFO  JobContainer - DataX Writer.Job [mysqlwriter] do prepare work .
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 09:21:03.532 [job-0] INFO  JobContainer - jobContainer starts to do split ...
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 09:21:03.533 [job-0] INFO  JobContainer - Job set Max-Byte-Speed to 1048576 bytes.
+2022-01-26 09:21:03 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 09:21:03.551 [job-0] INFO  cluster - No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=10.50.10.27:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSecurityException: Exception authenticating MongoCredential{mechanism=null, userName='root', source='test', password=<hidden>, mechanismProperties={}}}, caused by {com.mongodb.MongoCommandException: Command failed with error 18: 'Authentication failed.' on server 10.50.10.27:27017. The full response is { "ok" : 0.0, "errmsg" : "Authentication failed.", "code" : 18, "codeName" : "AuthenticationFailed" }}}]}. Waiting for 30000 ms before timing out
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 09:21:33.553 [job-0] ERROR JobContainer - Exception when job run
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting for a server that matches ReadPreferenceServerSelector{readPreference=primary}. Client view of cluster state is {type=UNKNOWN, servers=[{address=10.50.10.27:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSecurityException: Exception authenticating MongoCredential{mechanism=null, userName='root', source='test', password=<hidden>, mechanismProperties={}}}, caused by {com.mongodb.MongoCommandException: Command failed with error 18: 'Authentication failed.' on server 10.50.10.27:27017. The full response is { "ok" : 0.0, "errmsg" : "Authentication failed.", "code" : 18, "codeName" : "AuthenticationFailed" }}}]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.BaseCluster.createTimeoutException(BaseCluster.java:369) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.BaseCluster.selectServer(BaseCluster.java:101) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.binding.ClusterBinding$ClusterBindingConnectionSource.<init>(ClusterBinding.java:75) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.binding.ClusterBinding$ClusterBindingConnectionSource.<init>(ClusterBinding.java:71) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.binding.ClusterBinding.getReadConnectionSource(ClusterBinding.java:63) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.operation.OperationHelper.withConnection(OperationHelper.java:201) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.operation.CountOperation.execute(CountOperation.java:206) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.operation.CountOperation.execute(CountOperation.java:53) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.Mongo.execute(Mongo.java:772) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.Mongo$2.execute(Mongo.java:759) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.MongoCollectionImpl.count(MongoCollectionImpl.java:185) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.MongoCollectionImpl.count(MongoCollectionImpl.java:165) ~[mongo-java-driver-3.2.2.jar:na]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.plugin.reader.mongodbreader.util.CollectionSplitUtil.doSplitInterval(CollectionSplitUtil.java:55) ~[mongodbreader-0.0.1-SNAPSHOT.jar:na]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.plugin.reader.mongodbreader.util.CollectionSplitUtil.doSplit(CollectionSplitUtil.java:37) ~[mongodbreader-0.0.1-SNAPSHOT.jar:na]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.plugin.reader.mongodbreader.MongoDBReader$Job.split(MongoDBReader.java:37) ~[mongodbreader-0.0.1-SNAPSHOT.jar:na]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.job.JobContainer.doReaderSplit(JobContainer.java:732) ~[datax-core-0.0.1-SNAPSHOT.jar:na]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.job.JobContainer.split(JobContainer.java:393) ~[datax-core-0.0.1-SNAPSHOT.jar:na]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.job.JobContainer.start(JobContainer.java:117) ~[datax-core-0.0.1-SNAPSHOT.jar:na]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.Engine.start(Engine.java:92) [datax-core-0.0.1-SNAPSHOT.jar:na]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.Engine.entry(Engine.java:171) [datax-core-0.0.1-SNAPSHOT.jar:na]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.Engine.main(Engine.java:204) [datax-core-0.0.1-SNAPSHOT.jar:na]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 09:21:33.561 [job-0] INFO  StandAloneJobContainerCommunicator - Total 0 records, 0 bytes | Speed 0B/s, 0 records/s | Error 0 records, 0 bytes |  All Task WaitWriterTime 0.000s |  All Task WaitReaderTime 0.000s | Percentage 0.00%
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 2022-01-26 09:21:33.562 [job-0] ERROR Engine -
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 经DataX智能分析,该任务最可能的错误原因是:
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] com.alibaba.datax.common.exception.DataXException: Code:[Framework-02], Description:[DataX引擎运行过程出错，具体原因请参看DataX运行结束时的错误诊断信息  .].  - com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting for a server that matches ReadPreferenceServerSelector{readPreference=primary}. Client view of cluster state is {type=UNKNOWN, servers=[{address=10.50.10.27:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSecurityException: Exception authenticating MongoCredential{mechanism=null, userName='root', source='test', password=<hidden>, mechanismProperties={}}}, caused by {com.mongodb.MongoCommandException: Command failed with error 18: 'Authentication failed.' on server 10.50.10.27:27017. The full response is { "ok" : 0.0, "errmsg" : "Authentication failed.", "code" : 18, "codeName" : "AuthenticationFailed" }}}]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.BaseCluster.createTimeoutException(BaseCluster.java:369)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.BaseCluster.selectServer(BaseCluster.java:101)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.binding.ClusterBinding$ClusterBindingConnectionSource.<init>(ClusterBinding.java:75)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.binding.ClusterBinding$ClusterBindingConnectionSource.<init>(ClusterBinding.java:71)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.binding.ClusterBinding.getReadConnectionSource(ClusterBinding.java:63)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.operation.OperationHelper.withConnection(OperationHelper.java:201)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.operation.CountOperation.execute(CountOperation.java:206)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.operation.CountOperation.execute(CountOperation.java:53)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.Mongo.execute(Mongo.java:772)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.Mongo$2.execute(Mongo.java:759)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.MongoCollectionImpl.count(MongoCollectionImpl.java:185)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.MongoCollectionImpl.count(MongoCollectionImpl.java:165)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.plugin.reader.mongodbreader.util.CollectionSplitUtil.doSplitInterval(CollectionSplitUtil.java:55)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.plugin.reader.mongodbreader.util.CollectionSplitUtil.doSplit(CollectionSplitUtil.java:37)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.plugin.reader.mongodbreader.MongoDBReader$Job.split(MongoDBReader.java:37)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.job.JobContainer.doReaderSplit(JobContainer.java:732)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.job.JobContainer.split(JobContainer.java:393)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.job.JobContainer.start(JobContainer.java:117)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.Engine.start(Engine.java:92)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.Engine.entry(Engine.java:171)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.Engine.main(Engine.java:204)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53]  - com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting for a server that matches ReadPreferenceServerSelector{readPreference=primary}. Client view of cluster state is {type=UNKNOWN, servers=[{address=10.50.10.27:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSecurityException: Exception authenticating MongoCredential{mechanism=null, userName='root', source='test', password=<hidden>, mechanismProperties={}}}, caused by {com.mongodb.MongoCommandException: Command failed with error 18: 'Authentication failed.' on server 10.50.10.27:27017. The full response is { "ok" : 0.0, "errmsg" : "Authentication failed.", "code" : 18, "codeName" : "AuthenticationFailed" }}}]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.BaseCluster.createTimeoutException(BaseCluster.java:369)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.BaseCluster.selectServer(BaseCluster.java:101)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.binding.ClusterBinding$ClusterBindingConnectionSource.<init>(ClusterBinding.java:75)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.binding.ClusterBinding$ClusterBindingConnectionSource.<init>(ClusterBinding.java:71)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.binding.ClusterBinding.getReadConnectionSource(ClusterBinding.java:63)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.operation.OperationHelper.withConnection(OperationHelper.java:201)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.operation.CountOperation.execute(CountOperation.java:206)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.operation.CountOperation.execute(CountOperation.java:53)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.Mongo.execute(Mongo.java:772)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.Mongo$2.execute(Mongo.java:759)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.MongoCollectionImpl.count(MongoCollectionImpl.java:185)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.MongoCollectionImpl.count(MongoCollectionImpl.java:165)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.plugin.reader.mongodbreader.util.CollectionSplitUtil.doSplitInterval(CollectionSplitUtil.java:55)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.plugin.reader.mongodbreader.util.CollectionSplitUtil.doSplit(CollectionSplitUtil.java:37)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.plugin.reader.mongodbreader.MongoDBReader$Job.split(MongoDBReader.java:37)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.job.JobContainer.doReaderSplit(JobContainer.java:732)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.job.JobContainer.split(JobContainer.java:393)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.job.JobContainer.start(JobContainer.java:117)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.Engine.start(Engine.java:92)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.Engine.entry(Engine.java:171)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.Engine.main(Engine.java:204)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.common.exception.DataXException.asDataXException(DataXException.java:40)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.job.JobContainer.start(JobContainer.java:162)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.Engine.start(Engine.java:92)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.Engine.entry(Engine.java:171)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.Engine.main(Engine.java:204)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] Caused by: com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting for a server that matches ReadPreferenceServerSelector{readPreference=primary}. Client view of cluster state is {type=UNKNOWN, servers=[{address=10.50.10.27:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSecurityException: Exception authenticating MongoCredential{mechanism=null, userName='root', source='test', password=<hidden>, mechanismProperties={}}}, caused by {com.mongodb.MongoCommandException: Command failed with error 18: 'Authentication failed.' on server 10.50.10.27:27017. The full response is { "ok" : 0.0, "errmsg" : "Authentication failed.", "code" : 18, "codeName" : "AuthenticationFailed" }}}]
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.BaseCluster.createTimeoutException(BaseCluster.java:369)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.connection.BaseCluster.selectServer(BaseCluster.java:101)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.binding.ClusterBinding$ClusterBindingConnectionSource.<init>(ClusterBinding.java:75)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.binding.ClusterBinding$ClusterBindingConnectionSource.<init>(ClusterBinding.java:71)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.binding.ClusterBinding.getReadConnectionSource(ClusterBinding.java:63)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.operation.OperationHelper.withConnection(OperationHelper.java:201)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.operation.CountOperation.execute(CountOperation.java:206)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.operation.CountOperation.execute(CountOperation.java:53)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.Mongo.execute(Mongo.java:772)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.Mongo$2.execute(Mongo.java:759)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.MongoCollectionImpl.count(MongoCollectionImpl.java:185)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.mongodb.MongoCollectionImpl.count(MongoCollectionImpl.java:165)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.plugin.reader.mongodbreader.util.CollectionSplitUtil.doSplitInterval(CollectionSplitUtil.java:55)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.plugin.reader.mongodbreader.util.CollectionSplitUtil.doSplit(CollectionSplitUtil.java:37)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.plugin.reader.mongodbreader.MongoDBReader$Job.split(MongoDBReader.java:37)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.job.JobContainer.doReaderSplit(JobContainer.java:732)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.job.JobContainer.split(JobContainer.java:393)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	at com.alibaba.datax.core.job.JobContainer.start(JobContainer.java:117)
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53] 	... 3 more
+2022-01-26 09:21:33 [AnalysisStatistics.analysisStatisticsLog-53]
+2022-01-26 09:21:33 [JobThread.run-165] <br>----------- datax-web job execute end(finish) -----------<br>----------- ReturnT:ReturnT [code=500, msg=command exit value(1) is failed, content=null]
+2022-01-26 09:21:33 [TriggerCallbackThread.callbackLog-186] <br>----------- datax-web job callback finish.
+
+use test
+
+db.createUser(
+     {
+       user: "test",
+       pwd: "123456",
+       roles: ["readWrite"]
+     }
+)
