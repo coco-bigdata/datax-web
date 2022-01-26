@@ -53,6 +53,9 @@ sudo docker tag docker_datax-web-executor:latest yiluxiangbei/centos7-bigdata-da
 sudo docker push yiluxiangbei/centos7-bigdata-dataxweb-admin:latest
 sudo docker push yiluxiangbei/centos7-bigdata-dataxweb-executor:latest
 
+mysql -h127.0.0.1 -uroot -p -P3312
+root
+use dataxweb
 update job_jdbc_datasource set jdbc_username='yRjwDFuoPKlqya9h9H2Amg==' where id=4;
 update job_jdbc_datasource set jdbc_password='XCYVpFosvZBBWobFzmLWvA==' where id=4;
 update job_jdbc_datasource set jdbc_username='',jdbc_password='' where id=4;
